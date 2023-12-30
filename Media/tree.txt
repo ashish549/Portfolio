@@ -1,0 +1,28 @@
+Root Directory
+│   index.html                    // Main HTML file
+│
+├── css                           // Folder for CSS files
+│   ├── style.css                 // Main stylesheet
+│   ├── footer                   
+│   │   └── footer.css            // Styles for footer section
+│   └── services
+│       └── service.css           // Styles for services section
+│
+├── media                         // Folder for media files (images)
+│   ├── looogo.png               // Logo image
+│   ├── dv.jpg                   // Image for About section
+│   ├── work1.jpg                // Portfolio work image 1
+│   ├── work2.jpg                // Portfolio work image 2
+│   └── work3.jpg                // Portfolio work image 3
+│
+├── contact
+│   └── contact.html              // Contact HTML file (potentially)
+│
+├── services
+│   └── Services.html             // Detailed services HTML file (potentially)
+│
+├── javascript
+│   └── script.js                 // JavaScript file for dynamic functionality
+│
+└── fonts
+    └── font-awesome              // Font library (Font Awesome files)

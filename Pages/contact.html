@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+ <link rel="stylesheet" href="/Style/footer.css">
+ <link rel="stylesheet" href="/Style/contact.css">
+ <!-- -----------------link to use font awsome icons  ------------------------- -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+ integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+        <!-- including logo -->
+            <img src="/media/looogo.png" class="logo">
+        <!-- navigation bar  -->
+                <ul>
+                    <li><a href="/index.html#home">Home</a></li>
+                    <li><a href="/index.html#about">About</a></li>
+                    <li><a href="/index.html#services">Services</a></li>
+                    <li><a href="/index.html#portfolio">Portfolio</a></li>
+                    <li><a href="/Pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div> 
+<!-- --------------------------------------------contact---------------------------------- -->
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>Ashish.Bhattarai@seamk.fi</p>
+                <p><i class="fa-solid fa-phone"></i>980989098</p>
+                <div class="social-icons">
+                    <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.linkedin.com/in/ashish-bhattarai-552a1216b"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="/Media/cv.pdf" download class=" btn btn2">Download CV</a>
+                 
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input  type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" role="6"  placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    
+                </form>
+
+            </div>  
+        </div>
+    </div>
+    
+</div>
+
+
+<!-- -----------------------------------FOOTER--------------------------------------------------------------- -->
+    
+	<div class="footer">
+		<p>"You’re either the one that creates the automation or you’re getting automated."</p>
+	   
+			 <div class="footer-in">
+			   Contact US<br>
+			   +358 44 XXXXXXX<br>
+			 </div>
+			 <div class="copyright">
+			   <p>copyright Ashish</p>
+		   </div>
+   </div>   
+ <!-------------------------------------scripting------------------------ -->
+ <script src="/Javascript/script.js"></script>
+ <script>
+    function handleFormSubmission(event) {
+           event.preventDefault();
+           const name = document.querySelector('input[name="Name"]').value;
+           const email = document.querySelector('input[name="email"]').value;
+           const message = document.querySelector('textarea[name="Message"]').value;
+           alert(`Thank you, ${name}!\nYour message has been submitted.\nWe will contact you at ${email}.`);
+           document.querySelector('form').reset();
+       }
+       document.querySelector('form').addEventListener('submit', handleFormSubmission);
+ </script>
+<!----------------------function that gives pop up message after feedback summission-------------- -->
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+  
+.footer {
+  margin-top: 20px;
+  position: relative;
+  text-align: center;
+  background: rgb(12, 2, 2);
+  padding: 20px;
+
+  
+ }
+
+footer-in{
+  align-items: center;
+}
+
+
+.copyright{
+  width: 100%;
+  text-align: center;
+  padding: 5px 0;
+  background:rgb(12, 2, 2);
+  font-weight: 300;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+
+/* Media query for screens 600px and below */
+@media (max-width: 600px) {
+  .footer {
+    padding: 10px; 
+  }
+  .copyright{
+  margin-top: 20px; 
+  }
+}
+
+
+  /*--------------------------- Media query for screens 992px and above------------------------------------------------------ */
+@media (min-width: 992px) {
+  .footer {
+
+    padding: 25px;
+  }
+
+  .copyright {
+   
+    margin-top: 40px;
+  }
+}
